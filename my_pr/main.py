@@ -36,9 +36,9 @@ def handle_id(message):
 def handle_sticker(message):
     sticker_handler(message, bot)  # Используем sticker_handler для обработки стикеров
 
-@bot.message_handler(func=lambda message: message.chat.id != AUTHORIZED_CHAT_ID)
-def handle_other(message):
-    (message, bot)
+# @bot.message_handler(func=lambda message: message.chat.id != AUTHORIZED_CHAT_ID)
+# def handle_other(message):
+#     (message, bot)
 
 # Бесконечный цикл для выполнения задач по расписанию
 # while True:
