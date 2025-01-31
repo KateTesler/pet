@@ -1,13 +1,17 @@
+import os
 import telebot
 import schedule
 import time
 import random 
 import re
-from my_pr.config import TOKEN, AUTHORIZED_CHAT_ID
+from my_pr.config import AUTHORIZED_CHAT_ID
 from my_pr.handlers import send_welcome, handle_message, sticker_handler  # Импортируем sticker_handler
 from my_pr.stickers import send_random_sticker  # Импортируем функцию для отправки стикеров
+from dotenv import load_dotenv
 
+load_dotenv()
 
+TOKEN = os.getenv("TOKEN")
 # Инициализация бота
 bot = telebot.TeleBot(TOKEN)
 

@@ -1,9 +1,8 @@
 # config.py
 
-TOKEN = '7284013293:AAG5b9TmZw3u8zdQB3BmNHHXe0TkzeBo_QE'
 
 # ID чата, на который будет реагировать бот
-AUTHORIZED_CHAT_ID = 902584287  # Замените на ID вашей группы
+ # Замените на ID вашей группы
 # Список стикеров
 STICKERS = [
     'CAACAgIAAxkBAAOqZ3qxQlIr9IIxqgHsNPxwvFEP32oAAjYXAAIGf6BIc_I6FjK0bGc2BA',  # Пример стикера
